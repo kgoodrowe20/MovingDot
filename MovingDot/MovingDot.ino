@@ -95,18 +95,22 @@ void MoveEnemy()
   if(x>enemyx)
     {
       enemyx++;
+      delay(150);
     }
   if(y>enemyy)
     {
       enemyy++;
+      delay(150);
     }
      if(x<enemyx)
     {
       enemyx--;
+      delay(150);
     }
   if(y<enemyy)
     {
       enemyy--;
+      delay(150);
     }
-    delay(150);
+   
 }
