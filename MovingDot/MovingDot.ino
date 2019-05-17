@@ -17,7 +17,6 @@ void loop()
   obstacles();
   DrawPx (x, y, Green);
   DrawPx(enemyx, enemyy, 1);
-  CheckButtonsPress();
   movement();
   check();
   MoveEnemy();
@@ -40,6 +39,7 @@ void obstacles()
 
 void movement()
 {
+  CheckButtonsPress();
   if(Button_Left)
    {
    if(ReadPx(x-1,y) != 1)
@@ -92,25 +92,22 @@ void check()
 
 void MoveEnemy()
 {
+  delay(500);
   if(x>enemyx)
     {
       enemyx++;
-      delay(150);
     }
   if(y>enemyy)
     {
       enemyy++;
-      delay(150);
     }
      if(x<enemyx)
     {
       enemyx--;
-      delay(150);
     }
   if(y<enemyy)
     {
       enemyy--;
-      delay(150);
     }
    
 }
