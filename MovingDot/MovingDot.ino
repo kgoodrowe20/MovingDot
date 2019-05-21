@@ -92,7 +92,7 @@ void check()
 
 void MoveEnemy()
 {
-  delay(500);
+  delay(100);
   if(x>enemyx)
     {
       enemyx++;
