@@ -6,8 +6,8 @@ int x,y,enemyx,enemyy;
 void setup() 
 {
   MeggyJrSimpleSetup();
-  x = 2;
-  y = 2;
+  x = 1;
+  y = 1;
   enemyx = random(8);
   enemyy= random(8);
 }
@@ -35,6 +35,14 @@ void obstacles()
   DrawPx (3, 4, 1);
   DrawPx (3, 3, 1);
   
+  DrawPx (1, 3, 1);
+  DrawPx (0, 3, 1);
+
+  DrawPx (3, 0, 1);
+  DrawPx (3, 1, 1);
+
+  DrawPx (6, 6, 1);
+  DrawPx (6, 7, 1);
 }
 
 void movement()
