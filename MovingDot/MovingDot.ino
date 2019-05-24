@@ -42,18 +42,18 @@ void movement()
   CheckButtonsPress();
   if(Button_Left)
    {
-   if(ReadPx(x-1,y) != 1)
-   {
-    x--;
+    if(ReadPx(x-1,y) != 1)
+    {
+      x--;
+    }
    }
-  }
   if(Button_Right)
-  {
-   if(ReadPx(x+1,y) != 1)
-   {
-    x++;
-   }
-  }
+    {
+    if(ReadPx(x+1,y) != 1)
+    {
+     x++;
+    }
+    }
   if(Button_Up)
    {
    if(ReadPx(x,y+1) != 1)
